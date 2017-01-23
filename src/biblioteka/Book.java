@@ -28,17 +28,59 @@ public class Book extends Biblioteka
     
     public Book()
     {
-        this.id ++ ;
+        //this.id ++ ;
     }
     
-    public void add()
+    public void add(int index)
     {
-        id++;
+        this.id = index;
+    }
+    
+    public String getId(int n){
+        if((n+1)<=this.id)
+        {
+        return Integer.toString(n);
+        }else {
+            return Integer.toString(n);
+        }
+            
+    }
+    public void setTytul(String tytul){
+        this.tytul=tytul;
+    }
+    
+    public void setAutor(String autor){
+        this.autor=autor;
+    }
+    
+    public void setOpis(String opis){
+        this.opis=opis;
+    }
+    
+    public void setUserId(String userid){
+        this.user_id=Integer.valueOf(userid);
+    }
+    
+    public String getTytul(){
+        return tytul;
+    }
+    
+    
+    public String getAutor(){
+        return autor;
+    }
+    
+    public String getOpis(){
+        return opis;
+    }
+    
+    public String getUserId(){
+        return Integer.toString(user_id);
     }
     
     public void getData(int i)
     {
-        if(i==0)
+        if(i==1)
         System.out.println("* Zawartość Bazy Bibliotecznej * - Ksiązki - *");
         System.out.println("");
         System.out.println("----------------------------------------------");
@@ -56,45 +98,19 @@ public class Book extends Biblioteka
         
     }
     
-    public void setData(String[] tab,int ile)
+    public void setData(String[] tab, int book_counter)//ile to index ksiazki moze buc 0(1)
     {
-        if (ile == 0) {//sprawdzenie czy pierwsza ksiazka i zapis
-            tab[ile] = Integer.toString(id);
-            ile++;
-            this.tytul = tab[ile];
-            ile++;
-            this.autor = tab[ile];
-            ile++;
-            this.opis = tab[ile];
-            ile++;
-            this.user_id = Integer.valueOf(tab[ile]);
-        } else {//jesli nie piwerwsza ustawienie indexu tablicy
-            ile*=5;
-            tab[ile] = Integer.toString(id);
-            ile++;
-            this.tytul = tab[ile];
-            ile++;
-            this.autor = tab[ile];
-            ile++;
-            this.opis = tab[ile];
-            ile++;
-            this.user_id = Integer.valueOf(tab[ile]);
 
-        }
-        
+            this.add(book_counter);
+            int i = 1;
+            this.tytul = tab[i];
+            i++;
+            this.autor = tab[i];
+            i++;
+            this.opis = tab[i];
+            i++;
+            this.user_id = Integer.valueOf(tab[i]);
+    
     }
-    
-    
-    
-     
-    
-     public void write(String name) throws IOException
-    {
-        FileWriter fw = new FileWriter(name);
-        BufferedWriter bw = new BufferedWriter(fw);
-        
-        
-    }
-    
     
 }
