@@ -16,9 +16,9 @@ import java.io.IOException;
  *
  * @author ppilus
  */
-public class User 
+public class User extends Biblioteka
 {
-    private static int id;
+    private int id;
     private String name;
     private String city;
     private String street;
@@ -27,17 +27,42 @@ public class User
     
     public User()
     {
-        id++;
+        
     }
     
-    public void add()
+    public void add(int i)
     {
-        id++;
+        this.id=i;
     }
     
-    public void getData(int i)
+    public String getId(){
+        return Integer.toString(id);
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getCity(){
+        return city;
+    }
+    
+    public String getStreet(){
+        return street;
+    }
+    
+    public String getNumber(){
+        return Integer.toString(number);
+    }
+    
+    public String getPhone(){
+        return Integer.toString(phone);
+    }
+    
+    public void getData(int obj_books, int i)
     {
-        if(i==0)
+       //for(int i=0; i<obj_books; i++){
+        if(i==0){
         System.out.println("* Zawartość Bazy Bibliotecznej * - Użytkownicy - *");
         System.out.println("");
         System.out.println("--------------------------------------------------");
@@ -54,38 +79,41 @@ public class User
         System.out.println("Telefon kontaktowy: "+this.phone);
         System.out.println("--------------------------------------------------");
         System.out.println("");
+        }else{
+        System.out.println("--------------------------------------------------");
+        System.out.println("ID Użytkownika   : "+this.id);
+        System.out.println("--------------------------------------------------");
+        System.out.println("Imię i Nazwisko   : "+this.name);
+        System.out.println("--------------------------------------------------");
+        System.out.println("Miasto            : "+this.city);
+        System.out.println("--------------------------------------------------");
+        System.out.println("Ulica             : "+this.street);
+        System.out.println("--------------------------------------------------");
+        System.out.println("Numer domu        : "+this.number);
+        System.out.println("--------------------------------------------------");
+        System.out.println("Telefon kontaktowy: "+this.phone);
+        System.out.println("--------------------------------------------------");
+        System.out.println("");
+        }
+       //}
         
     }
     
-    public void setData(String[] tab,int ile)
+    public void setData(String[] tab,int user_counter)
     {
-        
-        if (ile == 0) {//sprawdzenie czy pierwsza ksiazka i zapis
-            ile++;
-            this.name = tab[ile];
-            ile++;
-            this.city = tab[ile];
-            ile++;
-            this.street = tab[ile];
-            ile++;
-            this.number = Integer.valueOf(tab[ile]);
-            ile++;
-            this.phone = Integer.valueOf(tab[ile]);
-        } else {//jesli nie piwerwsza ustawienie indexu tablicy
-            ile*=6;
-            ile++;
-            this.name = tab[ile];
-            ile++;
-            this.city = tab[ile];
-            ile++;
-            this.street= tab[ile];
-            ile++;
-            this.number = Integer.valueOf(tab[ile]);
-            ile++;
-            this.phone = Integer.valueOf(tab[ile]);
-
-        }
-        
+        this.add(user_counter);
+            int i =1;
+           // i++;
+            this.name = tab[i];
+            i++;
+            this.city = tab[i];
+            i++;
+            this.street = tab[i];
+            i++;
+           // System.out.println("sprawdzamu co w i tab"+tab[i]);
+            this.number = Integer.valueOf(tab[i]);//Integer.valueOf(tab[i]);
+            i++;
+            this.phone = Integer.valueOf(tab[i]);   
         
     }
     
@@ -127,26 +155,26 @@ public class User
         
     }
     
-    public String toString()
-    {
-        return "|------------------------------------------------|\n"
-             + "|---   System Wirtualnej Biblioteki Książek   ---|\n"
-             + "|---           ***   MENU   ***               ---|\n"
-             + "|------------------------------------------------|\n"
-             + "| Wybierz odpowiedznią funkcję programu:         |\n"
-             + "|------------------------------------------------|\n"
-             + "|1 - Odczyt Bazy Danych                       ---|\n"
-             + "|------------------------------------------------|\n"
-             + "|2 - Zapis Bazy Danych                        ---|\n"
-             + "|------------------------------------------------|\n"
-             + "|3 - Dodanie Nowych Danych                    ---|\n"
-             + "|------------------------------------------------|\n"
-             + "|4 - Wypożyczenie Zbioru                      ---|\n"
-             + "|------------------------------------------------|\n"
-             + "|5 - Oddane Zbioru                            ---|\n"
-             + "|------------------------------------------------|\n"
-             + "|5 - Wyjście z Programu                       ---|\n"
-             + "|------------------------------------------------|\n";
-
-    } 
+//    public String toString()
+//    {
+//        return "|------------------------------------------------|\n"
+//             + "|---   System Wirtualnej Biblioteki Książek   ---|\n"
+//             + "|---           ***   MENU   ***               ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "| Wybierz odpowiedznią funkcję programu:         |\n"
+//             + "|------------------------------------------------|\n"
+//             + "|1 - Odczyt Bazy Danych                       ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "|2 - Zapis Bazy Danych                        ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "|3 - Dodanie Nowych Danych                    ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "|4 - Wypożyczenie Zbioru                      ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "|5 - Oddane Zbioru                            ---|\n"
+//             + "|------------------------------------------------|\n"
+//             + "|6 - Wyjście z Programu                       ---|\n"
+//             + "|------------------------------------------------|\n";
+//
+//    } 
 }
