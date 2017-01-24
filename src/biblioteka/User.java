@@ -49,6 +49,17 @@ public class User extends Biblioteka
     
     public String getStreet(){
         return street;
+<<<<<<< HEAD
+=======
+    }
+    
+    public String getNumber(){
+        return Integer.toString(number);
+    }
+    
+    public String getPhone(){
+        return Integer.toString(phone);
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
     }
     
     public String getNumber(){
@@ -61,8 +72,13 @@ public class User extends Biblioteka
     
     public void getData(int obj_books, int i)
     {
+<<<<<<< HEAD
        //for(int i=0; i<obj_books; i++){
         if(i==0){
+=======
+       
+        if(i==1)
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
         System.out.println("* Zawartość Bazy Bibliotecznej * - Użytkownicy - *");
         System.out.println("");
         System.out.println("--------------------------------------------------");
@@ -101,9 +117,15 @@ public class User extends Biblioteka
     
     public void setData(String[] tab,int user_counter)
     {
+<<<<<<< HEAD
         this.add(user_counter);
             int i =1;
            // i++;
+=======
+        
+        this.add(user_counter);
+            int i =1;
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
             this.name = tab[i];
             i++;
             this.city = tab[i];
