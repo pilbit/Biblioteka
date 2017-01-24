@@ -4,8 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <file>file:/home/ppilus/NetBeansProjects/Biblioteka/Biblioteka/src/biblioteka/Biblioteka.java</file>
             <file>file:/home/ppilus/NetBeansProjects/Biblioteka/Biblioteka/src/biblioteka/User.java</file>
+=======
+            <file>file:/home/ppilus/NetBeansProjects/Biblioteka/src/biblioteka/User.java</file>
+            <file>file:/home/ppilus/NetBeansProjects/Biblioteka/src/biblioteka/Book.java</file>
+            <file>file:/home/ppilus/NetBeansProjects/Biblioteka/src/biblioteka/Biblioteka.java</file>
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
             <file>file:/home/ppilus/NetBeansProjects/Biblioteka/src/biblioteka/User.java</file>
             <file>file:/home/ppilus/NetBeansProjects/Biblioteka/src/biblioteka/Book.java</file>

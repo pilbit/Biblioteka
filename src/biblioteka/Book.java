@@ -37,6 +37,9 @@ public class Book extends Biblioteka
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
     }
@@ -82,7 +85,10 @@ public class Book extends Biblioteka
     public String getUserId(){
         return Integer.toString(user_id);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
     }
     
@@ -126,6 +132,9 @@ public class Book extends Biblioteka
     
     public String getUserId(){
         return Integer.toString(user_id);
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
     }
     
@@ -136,8 +145,13 @@ public class Book extends Biblioteka
         if(i==0){
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         //for(int i=0; i<obj_users; i++){
         if(i==0){
+=======
+        if(i==1)
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
         if(i==1)
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13

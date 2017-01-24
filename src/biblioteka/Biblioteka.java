@@ -97,7 +97,12 @@ public class Biblioteka {
                                 //book[i].getData(book_counter); 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 //book[i].getData(book_counter); 
+=======
+                                book[i].getData(book_counter); 
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
                                 book[i].getData(book_counter); 
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
@@ -120,18 +125,24 @@ public class Biblioteka {
     {//name - name of the file, (name2, record_user, linie2, obj_users)
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         FileReader fr = new FileReader(name);
                         BufferedReader bf = new BufferedReader(fr);
                         String line;
         User[] users = new User[obj_users];
 <<<<<<< HEAD
+<<<<<<< HEAD
          try
                     {
                          
 =======
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
          try
                     {
                          
@@ -144,6 +155,9 @@ public class Biblioteka {
                         BufferedReader bf = new BufferedReader(fr);
                         String line; 
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
                         
                         String[] tab = new String[record_user];
@@ -184,21 +198,30 @@ public class Biblioteka {
                             
                             users[i].setData(tab,user_counter);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 
                         //}
                          }
                        
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
                             users[i].getData(user_counter);
                         //}
                          }
                         bf.close();
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
                      
                     }
@@ -242,6 +265,11 @@ public class Biblioteka {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            System.out.println(books1.get(i).getTytul());
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
             System.out.println(books1.get(i).getTytul());
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
@@ -261,6 +289,11 @@ public class Biblioteka {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            System.out.println(users1.get(i).getName());
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
             System.out.println(users1.get(i).getName());
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
@@ -307,9 +340,12 @@ public class Biblioteka {
         book.setData(tab,size+1);
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+        
+=======
         
         return book;
     }
@@ -341,6 +377,45 @@ public class Biblioteka {
         //tab[i]="0";
         //i++;
         user.setData(tab,size+1);
+        
+        
+        return user;
+    }
+    
+=======
+        
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+        return book;
+    }
+    
+    public User addUser(int record_user,int size){
+        Scanner input = new Scanner(System.in);
+        User user = new User();
+        //System.out.println("ilweee: "+a);
+        String[] tab = new String[record_user];
+        int i =1 ;
+        //tab[i] = Integer.toString(size+1);
+        //i++;
+        System.out.println("Podaj imie i nazwisko uzytkownika: ");
+        tab[i]=input.nextLine();
+        i++;
+        System.out.println("Podaj miasto: ");
+        tab[i]=input.nextLine();
+        i++;
+        System.out.println("Podaj ulice: ");
+        tab[i]=input.nextLine();
+        i++;
+        System.out.println("Podaj numer domu: ");
+        tab[i]=input.nextLine();
+        i++;
+        System.out.println("Podaj telefon kontaktowy: ");
+        tab[i]=input.nextLine();
+        //i++;
+       // System.out.println("");
+        //tab[i]="0";
+        //i++;
+        user.setData(tab,size+1);
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         
@@ -472,12 +547,17 @@ public class Biblioteka {
         //tab[i]="0";
         //i++;
         user.setData(tab,size+1);
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         
         
         return user;
     }
     
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
@@ -486,8 +566,11 @@ public class Biblioteka {
         
         Biblioteka bib = new Biblioteka();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         
         int linie = bib.licz(name);;
@@ -502,7 +585,10 @@ public class Biblioteka {
         ArrayList<User> users1 = new ArrayList<User>();
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
         int linie ;
         int linie2 ;
@@ -513,6 +599,9 @@ public class Biblioteka {
         ArrayList<Book> books1 = new ArrayList<Book>();
         ArrayList<User> users1 = new ArrayList<User>();
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         System.out.println(bib);
         Scanner input = new Scanner(System.in);
@@ -520,6 +609,7 @@ public class Biblioteka {
         int menu = input.nextInt();
         int add_counter=0;
         int add_counter2=0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -542,6 +632,20 @@ public class Biblioteka {
         Collections.addAll(books1, books);
         
 =======
+=======
+        
+        Book book = new Book();
+        User user = new User();
+        Book[] books = new Book[(obj_books)];
+        for(int i=0; i<books.length; i++)
+            books[i]=new Book();
+        User[] users = new User[(obj_users)];
+        for(int i=0; i<users.length; i++)
+            users[i]=new User();
+        
+        books = bib.read(record_book,name, linie,obj_books);
+        users = bib.read2(name2, record_user, linie2, obj_users);
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 
         Collections.addAll(users1, users);
         Collections.addAll(books1, books);
@@ -549,6 +653,9 @@ public class Biblioteka {
 =======
         Book book = new Book();
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         while (menu != 6)
         {
@@ -561,8 +668,11 @@ public class Biblioteka {
                     obj_books=linie/record_book;
                     obj_users=linie2/record_user;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
                     for(int i=0; i<obj_books; i++)
                     books1.get(i).getData(obj_books, i);//book.getData(obj_books,i);
@@ -570,7 +680,10 @@ public class Biblioteka {
                     users1.get(i).getData(obj_users, i);
                     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
 =======
                     Book[] books = new Book[(obj_books)];
                     User[] users = new User[(obj_users)];
@@ -580,6 +693,9 @@ public class Biblioteka {
                     Collections.addAll(users1, users);
                     Collections.addAll(books1, books);
 >>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+<<<<<<< HEAD
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
+=======
 >>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
                     
                     break;
