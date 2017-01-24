@@ -34,6 +34,11 @@ public class Book extends Biblioteka
     public void add(int index)
     {
         this.id = index;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
     }
     
     public String getId(int n){
@@ -76,12 +81,67 @@ public class Book extends Biblioteka
     
     public String getUserId(){
         return Integer.toString(user_id);
+<<<<<<< HEAD
+=======
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+    }
+    
+    public String getId(int n){
+        if((n+1)<=this.id)
+        {
+        return Integer.toString(n);
+        }else {
+            return Integer.toString(n);
+        }
+            
+    }
+    public void setTytul(String tytul){
+        this.tytul=tytul;
+    }
+    
+    public void setAutor(String autor){
+        this.autor=autor;
+    }
+    
+    public void setOpis(String opis){
+        this.opis=opis;
+    }
+    
+    public void setUserId(String userid){
+        this.user_id=Integer.valueOf(userid);
+    }
+    
+    public String getTytul(){
+        return tytul;
+    }
+    
+    
+    public String getAutor(){
+        return autor;
+    }
+    
+    public String getOpis(){
+        return opis;
+    }
+    
+    public String getUserId(){
+        return Integer.toString(user_id);
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
     }
     
     public void getData(int obj_users, int i)
     {
+<<<<<<< HEAD
         //for(int i=0; i<obj_users; i++){
         if(i==0){
+=======
+<<<<<<< HEAD
+        //for(int i=0; i<obj_users; i++){
+        if(i==0){
+=======
+        if(i==1)
+>>>>>>> 5e6cbfc11d50b03b75ba559be3413f4d39878b13
+>>>>>>> 3b41d1e446f554947eda9f9772bd8ffbd08f9750
         System.out.println("* Zawartość Bazy Bibliotecznej * - Ksiązki - *");
         System.out.println("");
         System.out.println("----------------------------------------------");
